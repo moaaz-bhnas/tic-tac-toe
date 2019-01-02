@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.7rem 'Josefin Sans', cursive;
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* ====================================================
+  Game
+======================================================= */
+.game {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+/* ====================================================
+  Board
+======================================================= */
+.board {
+  width: 9rem;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ====================================================
+  Square
+======================================================= */
+.square {
+  width: 3rem;  height: 3rem;
+}
+
+.square:nth-child(-n+6) {
+  border-bottom: 1px solid #333;
+}
+
+.square:nth-child(3n+1),
+.square:nth-child(3n+2) {
+  border-right: .1px solid #333;
+}
+
